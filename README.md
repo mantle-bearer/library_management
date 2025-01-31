@@ -22,6 +22,8 @@
   </p>
 </div>
 
+This RESTful API for Library Management that allows you to manage a library system with CRUD operations for books, including rate-limiting to ensure fair usage. Authentication is not required.
+
 ## Features
 
 - Book Management (CRUD)
@@ -68,6 +70,48 @@
    ```bash
    python manage.py runserver
    ```
+
+## Endpoints
+
+### 1. Retrieve All Books
+
+**GET** `api/v1/books`
+
+Retrieve a list of all books in the library.
+
+#### Request:
+
+- **Query Parameters:**
+  ```cURL
+      curl --location 'https://librarymanagement-chi.vercel.app/api/v1/books'
+  ```
+
+#### Response:
+
+```json
+[
+  {
+    "id": 1,
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "genre": "Classic Fiction",
+    "publication_date": "1925-04-10",
+    "availability": "available",
+    "edition": "3rd",
+    "summary": "A novel about the corruption of the American Dream."
+  },
+  {
+    "id": 2,
+    "title": "Alexander the great",
+    "author": "Luther King",
+    "genre": "Classic Fiction",
+    "publication_date": "1927-04-13",
+    "availability": "unavailable",
+    "edition": "5th",
+    "summary": "A corruption of the American Dream."
+  }
+]
+```
 
 ## Deployment
 
