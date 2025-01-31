@@ -1,10 +1,9 @@
 # Library Management System
 
-This RESTful API for Library Management that allows you to manage a library system with CRUD operations for books, including rate-limiting to ensure fair usage. Authentication is not required.
-
+<br>
 <div align="center">
   <a href="https://github.com/mantle-bearer/library_management">
-    <img src="images/api-logo.png" alt="Logo" width="80" height="80">
+    <img src="images/api-logo.png" alt="Logo" width="500" height="500">
   </a>
 
   <h3 align="center">RESTful API for Library Management</h3>
