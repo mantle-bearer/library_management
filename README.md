@@ -1,10 +1,30 @@
 # Library Management System
 
-A web-based application for managing a library's collection, users, and transactions. Built using Django.
+This RESTful API for Library Management that allows you to manage a library system with CRUD operations for books, including rate-limiting to ensure fair usage. Authentication is not required.
+
+<div align="center">
+  <a href="https://github.com/mantle-bearer/library_management">
+    <img src="images/api-logo.png" alt="Logo" width="80" height="80">
+  </a>
+
+  <h3 align="center">RESTful API for Library Management</h3>
+
+  <p align="center">
+    An awesome RESTful API that allows you to manage a library!
+    <br />
+    <a href="https://github.com/mantle-bearer/library_management"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://librarymanagement-chi.vercel.app/swagger">View Demo</a>
+    &middot;
+    <a href="https://github.com/mantle-bearer/library_management/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    &middot;
+    <a href="https://github.com/mantle-bearer/library_management/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+  </p>
+</div>
 
 ## Features
 
-- User Authentication
 - Book Management (CRUD)
 - Borrowing and Returning Books
 - User Management (Admin Interface)
@@ -22,7 +42,7 @@ A web-based application for managing a library's collection, users, and transact
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/YOUR_USERNAME/library_management.git
+   git clone https://github.com/mantle-bearer/library_management.git
    cd library_management
    ```
 
