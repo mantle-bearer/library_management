@@ -85,15 +85,31 @@ TEMPLATES = [
 WSGI_APPLICATION = 'library_management.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+import shutil
+
+# Set database location to /tmp
+tmp_db_path = '/tmp/db.sqlite3'
+
+# Path to the initial database in your project folder (read-only)
+project_db_path = './db.sqlite3'
+
+# If database doesn't exist in /tmp, copy it there or initialize it
+if not os.path.exists(tmp_db_path):
+    if os.path.exists(project_db_path):
+        shutil.copy(project_db_path, tmp_db_path)
+    else:
+        # If no existing database, create an empty one in /tmp
+        open(tmp_db_path, 'w').close()
+
+# Final database settings
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'tmp/db.sqlite3',
+        'NAME': tmp_db_path,
     }
 }
+
 
 
 # Password validation
