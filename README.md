@@ -16,6 +16,8 @@
     <br />
     <a href="https://librarymanagement-chi.vercel.app/swagger">View Demo</a>
     &middot;
+    <a href="https://documenter.getpostman.com/view/41332874/2sAYX3q32L#8c57ec9c-f6c0-48e7-8558-069c4eca5950">View Documentation</a>
+    &middot;
     <a href="https://github.com/mantle-bearer/library_management/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     &middot;
     <a href="https://github.com/mantle-bearer/library_management/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
